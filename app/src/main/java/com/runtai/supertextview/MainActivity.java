@@ -1,7 +1,9 @@
 package com.runtai.supertextview;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import com.runtai.supertextview.SuperTextView.MoveEffectAdjuster;
 import com.runtai.supertextview.SuperTextView.OpportunityDemoAdjuster;
@@ -22,6 +24,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+
+        stv_21.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TwoActivity.class));
+            }
+        });
     }
 
     private void initView() {

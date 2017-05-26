@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:runtai="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.runtai.supertextview.ZDYView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="#00000000" />
+
+    <com.runtai.supertextview.ZDYView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:background="#00000000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.runtai.zdytextlibrary.ZDYTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            runtai:titleText="自定义Title"
+            runtai:titleTextSize="30sp"
+            runtai:title_textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF00F0"
+            android:text="原生TextView"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+
+    <com.runtai.supertextview.MyViewGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff9900">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="20dp"
+            android:text="btn" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="btn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="btn" />
+    </com.runtai.supertextview.MyViewGroup>
+</LinearLayout>
